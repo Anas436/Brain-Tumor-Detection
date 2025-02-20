@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   
+</head>
+<body>
+    <div class="container">
+        <h1>Brain Tumor Detection</h1>
+        <p>Upload an MRI scan to detect the presence of a brain tumor.</p>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="imageUpload" accept="image/*" required>
+            <div class="image-preview" id="imagePreview"></div>
+            <button type="submit">Detect</button>
+        </form>
+        <div id="loading" class="loading" style="display: none;">Processing...</div>
+        
+         <div class="result">{{ prediction_text }}</div>
+      
+    </div>
+
+    <script>
+        document.getElementById("imageUpload").addEventListener("change", function(event) {
+            let file = event.target.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function(e) {
+                    let imgElement = document.createElement("img");
+                    imgElement.src = e.target.result;
+                    imgElement.className = "preview-img";
+                    let previewDiv = document.getElementById("imagePreview");
+                    previewDiv.innerHTML = "";
+                    previewDiv.appendChild(imgElement);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>
