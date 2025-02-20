@@ -1,7 +1,5 @@
 tensorflow
 pandas 
-dvc
-mlflow
 notebook
 numpy
 matplotlib
@@ -10,7 +8,7 @@ opencv-python
 python-box
 pyYAML
 tqdm
--U tf2onnx onnx
+tf2onnx 
 onnxruntime
 ensure
 joblib
@@ -20,3 +18,4 @@ Flask
 gunicorn
 Flask-Cors
 gdown
+# e .
