@@ -1,0 +1,22 @@
+tensorflow
+pandas 
+dvc
+mlflow
+notebook
+numpy
+matplotlib
+seaborn
+opencv-python
+python-box
+pyYAML
+tqdm
+-U tf2onnx onnx
+onnxruntime
+ensure
+joblib
+types-PyYAML
+scipy
+Flask
+gunicorn
+Flask-Cors
+gdown
