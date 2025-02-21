@@ -9,7 +9,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),'../../')
 from src.logger import logging
 from src.exception import CustomException
 
-@dataclass(frozen=True)
+
 class DataIngestion:
     def __init__(self):
         pass

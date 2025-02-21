@@ -147,7 +147,7 @@ def dataset_arrangement():
                                                                         Test_ratio=0.1
                                                                         )
     train_dataset,valid_dataset,test_dataset =data_ingestion.partition_dataset(
-                                                                         train_dataset,
+                                                                        train_dataset,
                                                                         valid_dataset,
                                                                         test_dataset
                                                                         )

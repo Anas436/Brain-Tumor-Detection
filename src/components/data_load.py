@@ -11,14 +11,14 @@ from src.constant import CONFIG_FILE_PATH,PARAMS_FILE_PATH
 from src.logger import logging
 from src.exception import CustomException
 
-@dataclass(frozen=True)
+@dataclass
 class DataingestionConfig:
     root_dir: Path
     source_url: str
     zip_path: Path
     unzip_path: Path
     
-@dataclass(frozen=True)
+
 class DataingestionConfigManager:
     
     def __init__(self,cofig_file_path=CONFIG_FILE_PATH,
@@ -40,7 +40,7 @@ class DataingestionConfigManager:
         )
         return ingestion_manager
     
-@dataclass(frozen=True)
+
 class Dataload:
     
     def __init__(self,config: DataingestionConfig):
@@ -63,3 +63,12 @@ class Dataload:
         os.makedirs(unzip_dir,exist_ok=True)
         with zipfile.ZipFile(zip_dir,'r') as zip_obj:
             zip_obj.extractall(unzip_dir)
+            
+if __name__ == "__main__":
+    try:
+        data_ingestion_manager = DataingestionConfigManager()
+        data_ingestion_config = Dataload(config=data_ingestion_manager.get_data_config_manager())
+        data_ingestion_config.download_dataset()
+        data_ingestion_config.Unzip_dataset()
+    except Exception as e:
+        raise CustomException(e,sys)
