@@ -9,11 +9,11 @@ import onnxruntime as nxrun
 import numpy as np
 import cv2
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),'../../')))
-from src.utils.commonFunction import  dataset_arrangement
+
 from src.logger import logging
 from src.exception import CustomException
 
-train_dataset,valid_dataset,test_dataset = dataset_arrangement()
+
 
 # from path to prediction 
 def make_prediction(path):
