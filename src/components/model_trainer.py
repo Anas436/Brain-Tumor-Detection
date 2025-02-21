@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),'../')))
 from src.constant import CONFIG_FILE_PATH,PARAMS_FILE_PATH
 from src.logger import logging
-from src.utils.common import create_directories,read_yaml,dataset_arrangement
+from src.utils.commonFunction import create_directories,read_yaml,dataset_arrangement
 from src.exception import CustomException
 
 train_dataset,valid_dataset,test_dataset = dataset_arrangement()

@@ -9,7 +9,7 @@ import onnxruntime as nxrun
 import numpy as np
 import cv2
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),'../../')))
-from src.utils.common import  dataset_arrangement
+from src.utils.commonFunction import  dataset_arrangement
 from src.logger import logging
 from src.exception import CustomException
 
