@@ -140,19 +140,3 @@ def encodeImageIntoBase64(croppedImagePath):
     
 
     
-def dataset_arrangement():
-    
-    #load the data
-    data_ingestion = DataIngestion() 
-    dataset = data_ingestion.load_dataset_from_dir(directory= os.path.join("artifacts", "data_ingestion", "brain_tumor_dataset"))
-    train_dataset,valid_dataset,test_dataset=data_ingestion.split_dataset(dataset=dataset,
-                                                                        Train_ratio=0.7,
-                                                                        Val_ratio=0.2,
-                                                                        Test_ratio=0.1
-                                                                        )
-    train_dataset,valid_dataset,test_dataset =data_ingestion.partition_dataset(
-                                                                        train_dataset,
-                                                                        valid_dataset,
-                                                                        test_dataset
-                                                                        )
-    return train_dataset,valid_dataset,test_dataset
