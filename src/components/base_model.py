@@ -46,7 +46,7 @@ class BaseModel:
     def model(self):
         try:
             self.lenet_model = tf.keras.Sequential([
-                InputLayer(shape=self.config.IMG_SIZE),
+                InputLayer(input_shape = (224,224,3)),
                 Conv2D(filters=32,kernel_size=4,strides=1,activation='relu'),
                 BatchNormalization(),
                 MaxPooling2D(pool_size=(2,2),strides=2),

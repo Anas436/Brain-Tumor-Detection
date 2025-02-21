@@ -137,8 +137,12 @@ def decodeImage(imgstring, fileName):
 def encodeImageIntoBase64(croppedImagePath):
     with open(croppedImagePath, "rb") as f:
         return base64.b64encode(f.read())
+    
 
+    
 def dataset_arrangement():
+    
+    #load the data
     data_ingestion = DataIngestion() 
     dataset = data_ingestion.load_dataset_from_dir(directory= os.path.join("artifacts", "data_ingestion", "brain_tumor_dataset"))
     train_dataset,valid_dataset,test_dataset=data_ingestion.split_dataset(dataset=dataset,

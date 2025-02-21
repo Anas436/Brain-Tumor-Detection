@@ -75,3 +75,4 @@ class DataIngestion:
         self.test_dataset = test_dataset.map(self.normalize_the_dataset).batch(1)
         
         return self.train_dataset,self.valid_dataset,self.test_dataset
+

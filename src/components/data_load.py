@@ -64,7 +64,8 @@ class Dataload:
         with zipfile.ZipFile(zip_dir,'r') as zip_obj:
             zip_obj.extractall(unzip_dir)
             
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     try:
         data_ingestion_manager = DataingestionConfigManager()
         data_ingestion_config = Dataload(config=data_ingestion_manager.get_data_config_manager())
