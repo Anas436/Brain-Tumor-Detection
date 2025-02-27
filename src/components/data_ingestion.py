@@ -17,12 +17,13 @@ class DataIngestion:
     def load_dataset_from_dir(directory):
        
         
-        try:             
+        try: 
+             class_names =['no','yes']          
              dataset = tf.keras.utils.image_dataset_from_directory(
                     directory, 
                     labels="inferred",               
                     label_mode="int",
-                    #class_names=self.class_names,               
+                    class_names=class_names,               
                     color_mode="rgb",                  
                     batch_size=None,                     
                     image_size=(256, 256),          
