@@ -1,7 +1,17 @@
 # Brain Tumor Detection
 Brain Tumor is the common disease in today's world.People of all ages can be affect by this disease.In this AI world we can solve this problem by CNN or transfer learning model.My motivation is worked to solve this problem and generalize a web service that everyone can use it.
-# Project Overview
-## Directory Structure
+## 📌 Features
+
+✅ Tensorflow
+
+✅ Deep Learning and Transfer Learning
+
+🔥 Trained on kaggle Brain tumor dataset
+
+💡 Uses ONNX for optimized inference  
+
+🎯 High accuracy prediction  
+## Project Overview
 ```
 brain-tumor-detection/
 │── KaggleNotebook
@@ -134,3 +144,13 @@ This project is licensed under the [LICENSE] file included in the repository.
 📧 Email: [azizashfak@gmail.com](mailto:azizashfak@gmail.com)  
 🔗 LinkedIn: [linkedin.com/in/aziz-ashfak](https://www.linkedin.com/in/aziz-ashfak/)  
 🐙 GitHub: [github.com/aziz-ashfak](https://github.com/aziz-ashfak/) 
+
+# Acknowledgement 
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue) 
+![Tenssorflow](https://img.shields.io/badge/Tenssorflow%20-orange)
+![Computer Vision](https://img.shields.io/badge/Deep%20Learning-Tansfer%20Learning-red)
+![Computer Vision](https://img.shields.io/badge/Lenet%20-DenseNet-blue)
+![Computer Vision](https://img.shields.io/badge/Resnet%20-InceptionResNet-blue)
+![Flask](https://img.shields.io/badge/Flask-Web%20App-orange)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+---
