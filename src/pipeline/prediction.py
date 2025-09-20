@@ -44,9 +44,9 @@ def create_prediction(image,target_size=(224,224)):
     result =class_names[pred]
 
     if result == 'yes':
-        return str('Yes, you have brain tumor.You should go to hospital!!!')
+        return str(' Brain Tumor Detected Our AI analysis indicates that a tumor is present in the uploaded MRI scan. It is strongly recommended to consult a qualified neurologist or oncologist immediately for further diagnosis and treatment. Please visit a hospital without delay.')
     else:
-        return str('You are free from brain tumor!!!')
+        return str(' No Brain Tumor Detected The AI analysis did not detect any signs of a tumor in the uploaded MRI scan. For continued health, maintain regular check-ups and consult your doctor if you notice any unusual symptoms.')
     
 
 def onnxModel_prediction(image,target_size=(224,224)):
@@ -66,7 +66,6 @@ def onnxModel_prediction(image,target_size=(224,224)):
      result =class_names[pred]
 
      if result == 'yes':
-        return str('Yes, you have brain tumor.You should go to hospital!!!')
-     else:
-        return str('You are free from brain tumor!!!')
-
+        return "❌ Brain Tumor Detected.\n⚠️ Consult a neurologist or oncologist immediately."
+     else:                                                                
+        return "✅ No Brain Tumor Detected.\nℹ️ Stay healthy and keep up regular check-ups." 
