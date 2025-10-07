@@ -117,16 +117,6 @@ Run the main application script:
 ```bash
 python app.py
    ```
-
-## Use Cloud Service 
-```bash 
-Link : www.render.com
-```
-## Use Thyroid-Disease-Prediction web-service link
-
-```bash
- https://brain-tumor-detection-8yp3.onrender.com/
-```
 ## Contributing
 If you would like to contribute, please fork the repository and submit a pull request.
 
