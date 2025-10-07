@@ -1,12 +1,12 @@
 # Brain Tumor Detection
-Brain Tumor is the common disease in today's world.People of all ages can be affect by this disease.In this AI world we can solve this problem by CNN or transfer learning model.My motivation is worked to solve this problem and generalize a web service that everyone can use it.
+Brain Tumor is a common disease in today's world. People of all ages can be affected by this disease. In this AI world, we can solve this problem by CNN or a transfer learning model. My motivation is to solve this problem and generalize a web service that everyone can use.
 ## 📌 Features
 
 ✅ Tensorflow
 
 ✅ Deep Learning and Transfer Learning
 
-🔥 Trained on kaggle Brain tumor dataset
+🔥 Trained on the Kaggle Brain Tumor dataset
 
 💡 Uses ONNX for optimized inference  
 
@@ -67,12 +67,12 @@ src/
 https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection
 ```
 # Describe the project
-## Dataset deatils:
-### About Dataset
-This data set contains 253 image .There have two category in this dataset. One is no(which is determine that patient  have no brain tumor) and another class is yes(which is use to determine patient  have brain tumor).
+## Dataset details:
+### About the Dataset
+This data set contains 253 images. There are two categories in this dataset. One is no(which is used to determine that the patient has no brain tumor) and another class is yes(which is used to determine patient has a brain tumor).
 
-#### Dataset dstribution:
-we split our dataset in three set.Such as:
+#### Dataset distribution:
+We split our dataset into three sets. Such as:
 
        Train dataset
        Validation dataset
@@ -98,17 +98,12 @@ Test dataset contained 0.10(10% of the entire dataset)
  
     InceptionResNetV2(accuracy: 0.9526 - loss: 0.1390 - val_accuracy: 0.920)  
 
-We use Lenet model for our application.Because it has less parameter than any other model.We take small space and work first than other mdoel.
-
-## kaggle notebook link
-```bash 
-https://www.kaggle.com/code/azizashfak/brain-tumor-detection-full-notebook/notebook
-```
+We use the LeNet model for our application. Because it has fewer parameters than any other model. We take a small space and work first before other models.
 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone <https://github.com/aziz-ashfak/Brain-Tumor-Detection.git>
+   git clone <https://github.com/Anas436/Brain-Tumor-Detection.git>
    ```
 2. Navigate to the project directory:
    ```bash
@@ -123,9 +118,9 @@ Run the main application script:
 python app.py
    ```
 
-## use cloud servce 
+## Use Cloud Service 
 ```bash 
-link : www.render.com
+Link : www.render.com
 ```
 ## Use Thyroid-Disease-Prediction web-service link
 
@@ -134,16 +129,6 @@ link : www.render.com
 ```
 ## Contributing
 If you would like to contribute, please fork the repository and submit a pull request.
-
-## License
-This project is licensed under the [LICENSE] file included in the repository.
-
-## Author
-
-👤 **Aziz Ashfak**  
-📧 Email: [azizashfak@gmail.com](mailto:azizashfak@gmail.com)  
-🔗 LinkedIn: [linkedin.com/in/aziz-ashfak](https://www.linkedin.com/in/aziz-ashfak1/)  
-🐙 GitHub: [github.com/aziz-ashfak](https://github.com/aziz-ashfak/) 
 
 # Acknowledgement 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue) 
